@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site Mario</title>
+</head>
+<body>
+  <div class="caixa-video-mario">
+    <video src="video.mp4"autoplay muted loop></video>
+    <div class="mascara-video"></div>
+  </div>
+   
+<div class="caixa-principal">
+   <img src="img/logo.png" alt="logo super Mario" class="logo-mario">
+    <p>Lorem, ipsum dolor sit amet consect assumenda porro quam, non mollitia dolores neque rem, esse velit officia asperiores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur in quo esse? quas voluptatem, rem eveniet explicabo ipsam est officiis iure?</p>
+    <button onclick="cliqueiNoBotao()">Click Aqui</button>
+
+</div>
+
+  <img src="img/mario.png" alt="mario-luigi"class="imagem-mario-luigi">
+
+  <form class="fale-conosco" action="https://formsubmit.co/cidinhapnuness@hotmail.com" method="POST">
+
+    <input placeholder="seu nome" type="text" name="nome">
+    <input placeholder="seu telefone" type="tel" name="telefone">
+    <textarea placeholder="digite seu pronlema aqui" name="info"></textarea>
+    <button onclick="sumirFormulario()">Click Aqui</button>
+
+  </form>
+  <div class="mascara-form"></div>
+  <script>
+  
+let formulario = document.querySelector(".fale-conosco")
+
+console.log(formulario)
+
+
+function cliqueiNoBotao(){
+    formulario.style.left = "700px"
+
+}
+
+
+function sumirFormulario(){
+    formulario.style.left = "-320px"
+}
+
+  </script>
+  
+
+</body>
+</html>
+  
